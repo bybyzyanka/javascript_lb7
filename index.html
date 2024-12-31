@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="uk"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="burger-menu" id="burgerMenu">&#9776;</button>
+            <ul id="navList">
+                <li><a href="#about">Про нас</a></li>
+                <li><a href="#courses">Курси</a></li>
+                <li><a href="#contact">Контакти</a></li>
+            </ul>
+        </nav>
+        <button class="scroll-to-top" id="scrollToTop">&#8593;</button>
+    </header>
+    <main>
+        <section id="about">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="img/person.png" alt="Person" width="540" height="540">
+                </div>
+                <div class="about-text">
+                    <div class="about-description">
+                        <p>Наші курси змінюють життя людей, Ви помітите зміни вже протягом проходження курсів.</p>
+                    </div>
+                    <div class="about-quote">
+                        <blockquote>
+                            <p>“Тестостерон — це паливо для справжнього чоловіка. Без нього ти просто машина без двигуна. Підвищуй рівень тестостерону, і ти станеш альфою, здатною підкорити будь-які вершини!”</p>
+                            <cite>Арсен Маркарян</cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="courses">
+            <h2>Курси</h2>
+            <div class="course-containers">
+                <div class="course">
+                    <h3>Чоловіча сила: Як стати альфа-лідером</h3>
+                    <p>У цьому курсі ви дізнаєтеся, як розвинути впевненість у собі та стати справжнім лідером. Ми розглянемо техніки підвищення самооцінки та тестостерону, методи управління стресом і стратегії ефективного спілкування. Цей курс допоможе вам стати тим, хто веде за собою та надихає інших. Як казав сам Арсен: “Будь альфою, а не омегою!”</p>
+                    <div class="course-info">
+                        <p><strong>Тривалість курсу:</strong> 10 тижнів</p>
+                        <p><strong>Ціна:</strong> $500</p>
+                    </div>
+                    <div class="course-actions">
+                        <button>Придбати курс</button>
+                    </div>
+                </div>
+
+                <div class="course">
+                    <h3>Залізна дисципліна: Шлях до успіху через самоконтроль</h3>
+                    <p>Дисципліна — ключ до досягнення будь-яких цілей. У цьому курсі ви навчитеся керувати своїм часом, ставити пріоритети та уникати прокрастинації. Ми також обговоримо важливість здорових звичок і як їх впровадити в повсякденне життя для максимальної продуктивності. Пам'ятайте, як казав Арсен: “Дисципліна — це шлях до свободи!”</p>
+                    <div class="course-info">
+                        <p><strong>Тривалість курсу:</strong> 12 тижнів</p>
+                        <p><strong>Ціна:</strong> $700</p>
+                    </div>
+                    <div class="course-actions">
+                        <button>Придбати курс</button>
+                    </div>
+                </div>
+
+                <div class="course">
+                    <h3>Мистецтво домінування: Як керувати своїм життям і стосунками</h3>
+                    <p>Цей курс призначений для тих, хто хоче взяти контроль над своїм життям і взаєминами. Ви дізнаєтеся, як встановлювати межі, ефективно спілкуватися та досягати поваги. Ми також розглянемо психологічні аспекти лідерства та впливу на оточуючих. І не забувайте: “Домінуй, владарюй, принижуй!” — як любить повторювати Арсен.</p>
+                    <div class="course-info">
+                        <p><strong>Тривалість курсу:</strong> 8 тижнів</p>
+                        <p><strong>Ціна:</strong> $400</p>
+                    </div>
+                    <div class="course-actions">
+                        <button>Придбати курс</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Зв'язок з нами</h2>
+            <p>Email: <a href="mailto:arsen.school@nure.ua">arsen.school@nure.ua</a></p>
+            <p>Телефон: <a href="tel:+380123456789">+38 (012) 345-67-89</a></p>
+            
+            <h3>Контактна форма</h3>
+            <form class="contact-form">
+                <label for="name">Ваше ім'я:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Ваш Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Ваше повідомлення:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Відправити</button>
+            </form>
+        </section>
+
+        <section id="gallery-section">
+            <h2>Галерея</h2>
+            <div id="spinner" class="spinner"></div>
+            <div id="gallery" class="gallery hidden"></div>
+        </section>
+
+        <section id="creatine-slider">
+            <h2>Дієта</h2>
+            <div class="slider">
+                <div class="item active">
+                    <img src="img/creatine.png" alt="Креатин 1">
+                </div>
+                <div class="item">
+                    <img src="img/creatine2.jpg" alt="Креатин 2">
+                </div>
+                <div class="item">
+                    <img src="img/creatine3.jpg" alt="Креатин 3">
+                </div>
+                <div class="item">
+                    <img src="img/creatine4.jpg" alt="Креатин 4">
+                </div>
+                <div class="item">
+                    <img src="img/creatine5.jpg" alt="Креатин 5">
+                </div>
+                <div class="item">
+                    <img src="img/creatine6.png" alt="Креатин 6">
+                </div>
+                <a class="previous" onclick="previousSlide()">&#10094;</a>
+                <a class="next" onclick="nextSlide()">&#10095;</a>
+            </div>
+        </section>
+
+        <div id="popup-container" class="popup hidden">
+            <div class="popup-content">
+                <img id="popup-image" src="" alt="Збільшене зображення">
+                <button id="popup-close" class="popup-close">&times;</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 KHNURE. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
